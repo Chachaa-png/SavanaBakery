@@ -1,6 +1,6 @@
 :root {
   --bg-light: #f8ebe2;
-  --bg-dark: #4a3f35;
+  --bg-dark: #b0739d;
   --accent: #e3b899;
   --text-dark: #4a3f35;
   --text-light: #ffffff;
@@ -20,7 +20,7 @@ h1, h2, h3, h4 {
 }
 
 .hero {
-  background-image: url('FruitTartsBackground.jpg');
+  background-image: url('JPG/FruitTartsBackground.jpg');
   background-size: cover;
   background-position: center;
   height: 60vh;
