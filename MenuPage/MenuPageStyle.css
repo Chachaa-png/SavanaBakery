@@ -1,0 +1,138 @@
+:root {
+      --bg-light: #f8ebe2;
+      --bg-dark: #4a3f35;
+      --accent: #e3b899;
+      --text-dark: #4a3f35;
+      --text-light: #ffffff;
+      --footer-bg: #4a3f35;
+      --footer-accent: #ffece1;
+ }
+  
+  h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+    }
+	
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+	  nav {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+	  }
+
+ .hero {
+      background-image: url('FruitTartsBackground.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      color: var(--text-light);
+      text-align: center;
+      padding-top: 150px;
+      position: relative;
+    }
+	.hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.3);
+      z-index: 0;
+	  }
+	  
+	    .hero-content{
+    position: relative;
+      z-index: 1;
+    }
+
+ .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  .logo {
+  color:var(--text-dark);
+  }
+
+  .cta-btn {
+    text-align: center;
+  background-color: var(--bg-dark);
+  color: var(--bg-light);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+  margin-top: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+ .kumpulankue {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.kue {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 16px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease;
+}
+
+.kue:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.kue img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.kue h3 {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: #333;
+}
+.kue .desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.kue .price {
+  font-weight: bold;
+  color: #000;
+  font-size: 1rem;
+}
+
+  footer {
+      background: var(--footer-bg);
+      color: var(--text-light);
+      padding: 30px 20px;
+      text-align: center;
+    }
+.footer-links a {
+      margin: 0 10px;
+      color: var(--text-light);
+      text-decoration: none;
+    }
