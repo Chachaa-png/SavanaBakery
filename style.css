@@ -185,3 +185,7 @@ footer button {
   color: var(--text-light);
   text-decoration: none;
 }
+
+a {
+  text-decoration: none;
+}
