@@ -189,3 +189,51 @@ footer button {
 a {
   text-decoration: none;
 }
+
+.css-slideshow {
+  position: relative;
+  max-width: 800px;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.css-slideshow .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: slideAnim 32s infinite;
+}
+
+.css-slideshow .s1 { animation-delay: 0s; }
+.css-slideshow .s2 { animation-delay: 8s; }
+.css-slideshow .s3 { animation-delay: 16s; }
+.css-slideshow .s4 { animation-delay: 24s; }
+
+@keyframes slideAnim {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  25% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.css-slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.css-slideshow p {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 0;
+}
